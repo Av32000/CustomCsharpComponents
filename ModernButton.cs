@@ -22,7 +22,11 @@ namespace Calendar.CustomComponents
         public Color BackgroundColor { get => this.BackColor; set { this.BackColor = value; this.Invalidate(); } }
         [Category("Modern Appearance")]
         public Color TextColor { get => this.ForeColor; set { this.ForeColor = value; this.Invalidate(); } }
-        
+        [Category("Modern Appearance")]
+        public Color MouseOverBackColor { get => this.MouseOverBackColor; set { this.MouseOverBackColor = value; this.Invalidate(); } }
+        [Category("Modern Appearance")]
+        public Color MouseDownBackColor { get => this.MouseDownBackColor; set { this.MouseDownBackColor = value; this.Invalidate(); } }
+
         public ModernButton()
         {
             this.FlatStyle = FlatStyle.Flat;
@@ -30,9 +34,7 @@ namespace Calendar.CustomComponents
             this.Size = new Size(150, 40);
             this.BackColor = Color.FromArgb(0, 122, 204);
             this.ForeColor = Color.White;
-            this.FlatAppearance.MouseOverBackColor = Color.Transparent;
             this.Cursor = Cursors.Hand;
-            this.FlatAppearance.MouseDownBackColor = Color.Transparent;
         }
 
         private GraphicsPath GetFigurePath(RectangleF rect, float radius)
