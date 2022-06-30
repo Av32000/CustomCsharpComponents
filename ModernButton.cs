@@ -22,10 +22,6 @@ namespace Calendar.CustomComponents
         public Color BackgroundColor { get => this.BackColor; set { this.BackColor = value; this.Invalidate(); } }
         [Category("Modern Appearance")]
         public Color TextColor { get => this.ForeColor; set { this.ForeColor = value; this.Invalidate(); } }
-        [Category("Modern Appearance")]
-        public Color MouseOverBackColor { get => this.MouseOverBackColor; set { this.MouseOverBackColor = value; this.Invalidate(); } }
-        [Category("Modern Appearance")]
-        public Color MouseDownBackColor { get => this.MouseDownBackColor; set { this.MouseDownBackColor = value; this.Invalidate(); } }
 
         public ModernButton()
         {
